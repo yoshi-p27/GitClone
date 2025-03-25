@@ -1,0 +1,11 @@
+> init
+<<<
+> branch x
+<<<
+> branch y
+<<<
+> branch z
+<<<
+> branch x
+A branch with that name already exists.
+<<<
