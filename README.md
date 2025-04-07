@@ -4,7 +4,7 @@ This is a git clone with simplified implementations of most Git functions, inclu
 I have written all of the code regarding this functionality, and all files relevant to it are marked with the author tag: Aayush Patel. These are primarily the main.java and commit.java files.
 This particular directory contains much of the infrastructure necessary to interface with the OS, which was provided to me. My role was implementing the logic for the above functions.
 
-Further, this code has been specially formatted to serve as a code sample for Tubi's Builders Program. As such, some functionality may be limited somewhat, but personal integration testing has been successful. As such
+Further, this code has been specially formatted to serve as a code sample. As such, some functionality may be limited somewhat, but personal integration testing has been successful. As such
 you will notice that there is only the initial commit, as the relevant code has been copied over from a project repo.
 
 ## Dependencies
@@ -42,10 +42,10 @@ if the file is not in the removal staging area. If it is in the removal staging 
 This function takes in a new branch name. It creates a new branch with the gien name and points it at the curent head node. It is merely a file which points to a commit identifier.
 
 #### rmBranch()
-This funciton takes in a branch name. This function deletes the branch with the given name, i.e. delete the file holding the pointer to a commit.
+This function takes in a branch name. This function deletes the branch with the given name, i.e. delete the file holding the pointer to a commit.
 
 #### checkout3()
-This funcion takes in a file name. This is the simplest checkout case where the version of the file at the head commit is put in or overwrites the version in the current working directory.
+This function takes in a file name. This is the simplest checkout case where the version of the file at the head commit is put in or overwrites the version in the current working directory.
 
 #### checkout4()
 This function takes in a commit id and a file name. It takes the file from the given commit and is put in or overwrites the version in the current working directory.
@@ -57,7 +57,7 @@ This function takes in a branch's name. It takes all the files in the commit at 
 This function takes in a commit id. It checks out all the files in the commit, and removes all files not in that commit from the cwd.
 
 #### merge()
-This funcition is rather complicated so please refer to the linked spec and the code for more detailed documentation. It takes in a branch name, and merges all files from the given branch into the current one.
+This funciton is rather complicated so please refer to the linked spec and the code for more detailed documentation. It takes in a branch name, and merges all files from the given branch into the current one.
 
 ### Testing
 Tests are given in the "testing" file in the repo. If you would like to run all tests, run "make test." If you would like to run a specific test compile with make, then run: python3 tester.py --verbose --keep FILE.in, Replaceing FILE with the desired .in file name. 
